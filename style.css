@@ -1,0 +1,107 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('assets/images/background.jpg');
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    font-size: 10vh;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Geostar Fill', cursive;
+
+    margin: 20px;
+}
+
+p {
+    font-family: 'Geostar Fill', cursive;
+    font-weight: 500;
+    color: white;
+    font-size: larger;
+    text-align: center;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.sub_contain {
+    height: 55vh;
+    aspect-ratio: 15 / 19;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    margin-bottom: 5vh;
+    position: relative;
+}
+
+.droid_content {
+    font-family: 'Manrope', sans-serif;
+    font-size: 2em;
+    font-weight: 800;
+    text-align: left;
+
+    border: 2px solid white;
+
+    height: 96%;
+    width: 96%;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: 3;
+    margin: 2%;
+}
+
+.filter {
+    height: 100%;
+    width: 100%;
+
+    background: linear-gradient(#dfd, #ddf);
+    opacity: 0.3;
+
+    position: absolute;
+    z-index: 2;
+}
+
+.droid_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    z-index: 1;
+}
+
+/* The Hover Effect */
+.sub_contain:hover > .filter{ 
+    background: transparent;
+}
+
+.sub_contain:hover > .droid_content{ 
+    color: white;
+    font-size: 2.5em;
+}
+
+footer {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Geostar Fill', cursive;
+}
